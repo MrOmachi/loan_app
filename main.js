@@ -91,8 +91,10 @@ function requiementChech() {
       'Viola!!! you are eligible for this loan and your application is successful'
     );
   } else if (customerPoints < 30) {
-    alert('Oga abeg getat');
-    console.log('Oga abeg getat');
+    alert('Sorry, you do not meet up with the requirement to access this loan');
+    console.log(
+      'Sorry, you do not meet up with the requirement to access this loan'
+    );
   }
   validatePoints();
 }
