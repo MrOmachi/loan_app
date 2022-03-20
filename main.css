@@ -3,7 +3,8 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 :root {
-  --content-width: 60%;
+  --content-width: 60vw;
+  --header-width: 5%;
 }
 .contain {
   background: linear-gradient(rgba(200, 0, 100, 0.5), rgba(0, 0, 100, 0.5)),
@@ -18,7 +19,7 @@
 }
 .title {
   font-weight: 700;
-  font-size: 35px;
+  font-size: calc(var(--content-width) * 0.05);
   text-align: center;
   color: white;
 }
