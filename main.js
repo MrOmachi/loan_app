@@ -90,8 +90,9 @@ function requiementChech() {
     alert(
       'Viola!!! you are eligible for this loan and your application is successful'
     );
-  } else if (customerPoints < 30 && customerPoints > 0) {
+  } else if (customerPoints < 30) {
     alert('Oga abeg getat');
+    console.log('Oga abeg getat');
   }
   validatePoints();
 }
