@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>first-project</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="contain">
+      <h1 class="title">
+        Kindly fill in the form correctly to access your loan
+      </h1>
+      <br />
+
+      <form class="survey-form">
+        <label for="">Select Your Credit History</label> <br />
+        <select name="lastCredited" id="lastCredited" class="content">
+          <option value="">How many months credit history do you have?</option>
+          <option value="withingSixMonth">Within Six Months</option>
+          <option value="aboveSevenMonth">Within One Year</option>
+          <option value="aboveSevenMonth">Within Two Years</option>
+          <option value="aboveSevenMonth">Within Three Years</option>
+          <option value="aboveSevenMonth">Within Four Years</option>
+        </select>
+
+        <br /><br />
+        <label for="lastDeposit">Select your last deposit period</label><br />
+        <select name="lastDeposit" id="lastDeposit" class="content">
+          <option value="">Kindly select the last time you deposited</option>
+          <option value="sixMonthDeposit">Within this month</option>
+          <option value="sevenMonthDeposit">Within two months</option>
+          <option value="sevenMonthDeposit">Within three months</option>
+          <option value="sevenMonthDeposit">Within four months</option>
+          <option value="sevenMonthDeposit">Within five months</option>
+          <option value="sevenMonthDeposit">Within six months</option>
+          <option value="sevenMonthDeposit">Within one Year</option>
+        </select>
+
+        <br /><br />
+        <label for="">Last loan collected</label> <br />
+        <select name="lastLoanCollected" id="lastLoanCollected" class="content">
+          <option value="">When last did you take a loan?</option>
+          <option value="sixMonthLoan">Have never collected a loan</option>
+          <option value="sixMonthLoan">Within the last two month</option>
+          <option value="sixMonthLoan">Within the last three month</option>
+          <option value="sixMonthLoan">Within the last four month</option>
+          <option value="sixMonthLoan">Within the last five month</option>
+          <option value="sixMonthLoan">Within the last six month</option>
+          <option value="sevenMonthLoan">Six months and Above</option>
+        </select>
+
+        <br /><br />
+        <label for="">Loan repayment period</label> <br />
+        <select name="loanRepayment" id="loanRepayment" class="content">
+          <option value="">How Long did you repay your last loan?</option>
+          <option value="repaySixMonth">Within one Month Repayment</option>
+          <option value="repaySixMonth">Within two Month Repayment</option>
+          <option value="repaySixMonth">Within three Month Repayment</option>
+          <option value="repaySixMonth">Within four Month Repayment</option>
+          <option value="repaySixMonth">Within five Month Repayment</option>
+          <option value="repaySixMonth">Within six Month Repayment</option>
+          <option value="repayAboveMonth">Within one year Repayment</option>
+          <option value="repayAboveMonth">Within two years Repayment</option>
+          <option value="repayAboveMonth">Within three years Repayment</option>
+        </select>
+
+        <br /><br />
+        <label for="">Account type</label> <br />
+        <select name="accountType" id="accountType" class="content">
+          <option value="">Kindly Select Your Account Type</option>
+          <option value="current">Current Account</option>
+          <option value="savings">Savings Account</option>
+        </select>
+        <br /><br />
+
+        <label for="loan">How much loan do you want</label>
+        <br />
+        <input
+          type="number"
+          name="loanAmount"
+          id="loanAmount"
+          class="content"
+        />
+        <span id="amountError" class="amountError"></span>
+        <br /><br />
+
+        <button type="button" id="regBtn">Submit</button>
+      </form>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
